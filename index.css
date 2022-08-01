@@ -1,0 +1,29 @@
+.main-container{
+    border: 1px solid #111;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+    padding: 2%;
+    height: 500px;
+}
+div.main-container :nth-child(1){
+    background-color: red;
+    border: 1px solid #111;
+}
+div.main-container :nth-child(2){
+    background-color: blue!important;
+    border: 1px solid #111;
+}
+div.main-container :nth-child(3){
+    background-color: green;
+    border: 1px solid #111;
+}
+div.main-container :nth-child(3),div.main-container :nth-child(2),div.main-container :nth-child(1){
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
